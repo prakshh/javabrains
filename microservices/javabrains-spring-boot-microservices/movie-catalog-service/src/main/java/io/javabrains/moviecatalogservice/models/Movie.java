@@ -1,9 +1,13 @@
-package io.javabrains.movieinfoservice.models;
+package io.javabrains.moviecatalogservice.models;
 
 public class Movie {
     private String movieId;
     private String name;
     private String description;
+
+    public Movie() {
+
+    }
 
     public Movie(String movieId, String name, String description) {
         this.movieId = movieId;

@@ -1,7 +1,6 @@
 package io.javabrains.moviecatalogservice.models;
 
 public class CatalogItem {
-
     private String name;
     private String desc;
     private int rating;
@@ -15,6 +14,7 @@ public class CatalogItem {
     public String getName() {
         return name;
     }
+
     public void setName(String name) {
         this.name = name;
     }
@@ -22,6 +22,7 @@ public class CatalogItem {
     public String getDesc() {
         return desc;
     }
+
     public void setDesc(String desc) {
         this.desc = desc;
     }
@@ -29,6 +30,7 @@ public class CatalogItem {
     public int getRating() {
         return rating;
     }
+
     public void setRating(int rating) {
         this.rating = rating;
     }
