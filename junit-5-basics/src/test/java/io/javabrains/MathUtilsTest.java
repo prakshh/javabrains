@@ -3,6 +3,7 @@ package io.javabrains;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.function.Executable;
 
 class MathUtilsTest {
 
@@ -15,6 +16,18 @@ class MathUtilsTest {
 		int actual = mathUtils.add(1,1);
 		assertEquals(expected,actual,"The add method should add two numbers");
 	}
+	
+	@Test
+	void testDivide() {
+		final MathUtils mathUtils = new MathUtils();
+		assertThrows(ArithmeticException.class, new Executable() {
+			public void execute() throws Throwable {
+				mathUtils.divide(1, 0);
+			}
+		}, 
+				"Divide should throw ArithmeticException when denominator is zero");
+	}
+	
 	
 	@Test
 	void testComputeCircleArea() {
