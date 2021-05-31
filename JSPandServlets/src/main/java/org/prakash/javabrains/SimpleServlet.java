@@ -1,6 +1,8 @@
 package org.prakash.javabrains;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -21,6 +23,8 @@ public class SimpleServlet extends HttpServlet {
 		
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
 		System.out.println("Hello from GET method.");
+		PrintWriter writer = response.getWriter();
+		writer.println("<h3>Hello in html</h3>");
 	}
 
 }
