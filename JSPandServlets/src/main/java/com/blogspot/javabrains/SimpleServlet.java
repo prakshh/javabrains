@@ -1,6 +1,8 @@
 package com.blogspot.javabrains;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -18,8 +20,11 @@ public class SimpleServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+	
+		//response.getWriter().append("Served at: ").append(request.getContextPath());
+		System.out.println("Hello from Servlet GET method - on the web page");
+		PrintWriter writer = response.getWriter();
+		writer.println("<h3>Hello in HTML from Servlet2 GET method</h3>");
 	}
 
 }
