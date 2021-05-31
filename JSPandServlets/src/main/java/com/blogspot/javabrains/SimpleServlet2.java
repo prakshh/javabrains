@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
  * Servlet implementation class SimpleServlet
  */
 @WebServlet(name = "SimpleServlet2", description = "A simple servlet blogspot", urlPatterns = { "/SimpleServlet2Path" })
-public class SimpleServlet extends HttpServlet {
+public class SimpleServlet2 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
@@ -23,8 +23,8 @@ public class SimpleServlet extends HttpServlet {
 	
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
 		System.out.println("Hello from Servlet GET method - on the web page");
-		PrintWriter writer = response.getWriter();
-		writer.println("<h3>Hello in HTML from Servlet2 GET method</h3>");
+		//PrintWriter writer = response.getWriter();
+		response.getWriter().println("<h3>Hello in HTML from Servlet2 GET method</h3>");
 	}
 
 }
