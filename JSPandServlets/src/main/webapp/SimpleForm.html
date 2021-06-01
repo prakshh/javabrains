@@ -6,8 +6,20 @@
 </head>
 <body>
 
-<form method="POST" action="xmlServletPath">
-	<input name="userName" />
+<form method="post" action="xmlServletPath">
+	User ID: <input name="userId" />
+	Full Name: <input name="fullName" />
+	<br>
+	Profession: 
+	<input type="radio" name="prof" value="Developer">Developer</input>
+	<input type="radio" name="prof" value="Architect">Architect</input>
+	<select name="location" multiple size=2>
+		<option value="here">Here</option>
+		<option value="there">There</option>
+		<option value="far">Far</option>
+		<option value="near">Near</option>
+		<option value="nowhere">Nowhere</option>
+	</select>
 	<input type="submit" />
 </form>
 
