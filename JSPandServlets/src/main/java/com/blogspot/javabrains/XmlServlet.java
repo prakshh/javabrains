@@ -14,6 +14,11 @@ public class XmlServlet extends HttpServlet {
 //		System.out.println("Xml Servlet called");
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
-		out.println("Hello! User");;
+		
+		String userName = request.getParameter("userName");
+		String userId = request.getParameter("userId");
+		out.println("Hello! " + userName + ". Your userID is " + userId);
+		// url : http://localhost:8080/SimpleServletProject/xmlServletPath?userName=abc&userId=xyz
+		;
 	}
 }
