@@ -11,14 +11,21 @@ import javax.servlet.http.HttpServletResponse;
 public class XmlServlet extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//		System.out.println("Xml Servlet called");
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
-		
 		String userName = request.getParameter("userName");
 		String userId = request.getParameter("userId");
-		out.println("Hello! " + userName + ". Your userID is " + userId);
+		out.println("Hello from GET method! " + userName + ". Your userID is " + userId);
 		// url : http://localhost:8080/SimpleServletProject/xmlServletPath?userName=abc&userId=xyz
-		;
+	}
+		
+		// For POST parameter, we need an HTML form
+		protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+			response.setContentType("text/html");
+			PrintWriter out = response.getWriter();
+			String userName = request.getParameter("userName");
+			String userId = request.getParameter("userId");
+			out.println("Hello from POST method! " + userName + ". Your userID is " + userId);
+			// url doesn't show IDs		;
 	}
 }
