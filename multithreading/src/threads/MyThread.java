@@ -9,7 +9,7 @@ public class MyThread implements Runnable {
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
-//                e.printStackTrace();
+                e.printStackTrace();
             }
         }
     }
@@ -18,5 +18,9 @@ public class MyThread implements Runnable {
         MyThread mythread = new MyThread();
         Thread thread = new Thread(mythread);
         thread.start();
+
+//        MyAnotherThread anotherthread = new MyAnotherThread();
+////        thread.start();
+//        anotherthread.start();
     }
 }
