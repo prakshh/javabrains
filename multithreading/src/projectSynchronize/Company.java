@@ -16,7 +16,8 @@ public class Company {
     synchronized public int consume_item() throws InterruptedException {
         if(!f) wait();
         System.out.println("Consumed : " + this.n);
-        f = true;
+//        f = true;
+        f = false;
         notify();
         return this.n;
     }
