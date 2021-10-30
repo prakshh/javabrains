@@ -34,6 +34,13 @@ public class Main {
         MyInter iLambda2 = () -> System.out.println("I am second Lambda expression");
         iLambda2.sayHello();
 
+        // sum of two numbers using lambda
+//        SumInter suminter = (int a, int b) -> { return a + b; };
+        SumInter suminter = (a, b) -> a + b; // optimizing the code as single line
+        // SumInter's method helps to understand the type of the arguments
+        System.out.println(suminter.sum(5, 2));
+        System.out.println(suminter.sum(6, 4));
+
 
     }
 }
