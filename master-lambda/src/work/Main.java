@@ -41,6 +41,10 @@ public class Main {
         System.out.println(suminter.sum(5, 2));
         System.out.println(suminter.sum(6, 4));
 
+        // length of a string
+        LengthInter len = (str) -> str.length();
+        System.out.println(len.getLength("Matrix Resurrections"));
+
 
     }
 }
