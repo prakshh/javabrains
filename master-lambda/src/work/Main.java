@@ -6,6 +6,22 @@ public class Main {
 
         MyInter myinter = new MyInterImpl();
         myinter.sayHello();
+
+        MyInter anon = new MyInter() {
+            @Override
+            public void sayHello() {
+                System.out.println("I am inside an anonymous class");
+            }
+        };
+        anon.sayHello();
+
+        MyInter anon2 = new MyInter(){
+            @Override
+            public void sayHello(){
+                System.out.println("I am inside second anonymous class");
+            }
+        };
+        anon2.sayHello();
     }
 }
 

@@ -9,8 +9,11 @@ public interface MyInter {
 
     how to use this interface?
     1. create separate class and implement this interface
+    2. anonymous class for implementing interface
 
     */
+
+
 
 
 }
