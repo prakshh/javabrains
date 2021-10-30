@@ -14,6 +14,8 @@ public interface MyInter {
         - Lambda can be only used for functional interface, that is, for only one-method-interface
         - if two or more methods, then anonymous classes will be required
 
+     git config --global user.email <your email id>
+
     */
 
 
