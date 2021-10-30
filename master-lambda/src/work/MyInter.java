@@ -11,6 +11,8 @@ public interface MyInter {
     1. create separate class and implement this interface
     2. anonymous class for implementing interface
     3.Lambda expression
+        - Lambda can be only used for functional interface, that is, for only one-method-interface
+        - if two or more methods, then anonymous classes will be required
 
     */
 
